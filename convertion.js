@@ -17,3 +17,9 @@ console.log(numeroString === numero)
 //conversão explicita 
 
 console.log(numero + Number(numeroString))
+
+var repostaDeTudo = 3.14;
+let idade = 42;
+const pi = 29;
+
+
