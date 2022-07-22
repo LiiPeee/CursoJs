@@ -1,0 +1,29 @@
+class Cliente {
+  constructor(nome, cpf, email, saldo) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.email = email;
+    this.saldo = saldo
+  }
+
+  deposita(valor){
+    this.saldo +=valor
+  }
+  exibirSaldo(){
+    console.log(this.saldo)
+  }
+}
+
+class clientePoupança extends Cliente{
+    constructor(nome,cpf,email,saldo){
+        super(nome,cpf,email,saldo)
+        this.saldoPoupança = saldoPoupança 
+    }
+    depositaPoupança(valor){
+        this.saldoPoupança +=valor
+    }
+}
+
+const felipePoupança = new clientePoupança("Felipe","1515151515","feçoé@gmail.com",500)
+console.log(felipePoupança)
+felipePoupança.depositaPoupança(200)
